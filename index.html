@@ -34,6 +34,9 @@
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
 
+    <!-- Modal reunión -->
+    <link rel="stylesheet" href="assets/css/modal-reunión.css">
+
     <!-- Page loading styles -->
     <style>
       .page-loading {
@@ -193,7 +196,7 @@
                           <li><a href="#" class="dropdown-item">Desarrollo de Apps IOS</a></li>
                           <li><a href="#" class="dropdown-item">Desarrollo Web a la medida</a></li>
                           <li><a href="#" class="dropdown-item">Desarrollo Web en WordPress</a></li>
-                          <li><a href="#" class="dropdown-item">Apps con AppsSheet</a></li>
+                          <li><a href="#" class="dropdown-item">Apps con AppSheet</a></li>
                           <li><a href="#" class="dropdown-item">Wep Scraping con IA</a></li>
                         </ul>
                       </div>
@@ -271,7 +274,7 @@
                           <li><a href="#" class="dropdown-item py-1">Cumpleaños</a></li>
                           <li><a href="#" class="dropdown-item py-1">15 años</a></li>
                         </ul>
-                        <h6 class="px-3 mb-2">Consultorias en</h6>
+                        <h6 class="px-3 mb-2">Consultorías en</h6>
                         <ul class="list-unstyled">
                           <li><a href="404-v1.html" class="dropdown-item py-1">Publicidad Digital</a></li>
                           <li><a href="404-v2.html" class="dropdown-item py-1">Marketing</a></li>
@@ -390,16 +393,16 @@
       </div>
       <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
         <div class="d-flex mb-4 mb-sm-0">
-          <a href="https://www.linkedin.com/in/oscarleonapp/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/oscarleonapp/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2" aria-label="LinkedIn"  target="_blank">
             <i class="bx bxl-linkedin"></i>
           </a>
-          <a href="https://www.facebook.com/oscarleondev" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2" aria-label="Facebook">
+          <a href="https://www.facebook.com/oscarleondev" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-2" aria-label="Facebook"  target="_blank">
             <i class="bx bxl-facebook"></i>
           </a>
-          <a href="https://www.instagram.com/oscarleon.app/" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-2" aria-label="Instagram">
+          <a href="https://www.instagram.com/oscarleon.app/" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-2" aria-label="Instagram"  target="_blank">
             <i class="bx bxl-instagram"></i>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=50241833532&text=%F0%9F%A4%9D%20Hola%2C%20OSCARLEON." class="btn btn-icon btn-secondary btn-whatsapp rounded-circle me-2" aria-label="WhatsApp">
+          <a href="https://api.whatsapp.com/send?phone=50241833532&text=%F0%9F%A4%9D%20Hola%2C%20OSCARLEON." class="btn btn-icon btn-secondary btn-whatsapp rounded-circle me-2" aria-label="WhatsApp"  target="_blank">
             <i class="bx bxl-whatsapp"></i>
           </a>
         </div>
@@ -410,9 +413,66 @@
       </div>
     </section>
 
-
+    <!-- Modal Reunión virtual -->
+    <div id="reunion" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe
+          src="https://forms.gle/cjmNXY6URVKY5N3E8"
+          width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+      </div>
+    </div>
+    <!-- End Modal -->
+    <!-- Modal Cotización -->
+    <div id="cotizacion" class="modal">
+      <div class="modal-content">
+        <span class="closeCoti">&times;</span>
+        <iframe
+          src="https://forms.gle/f5DJ4YAQGpeB7S5DA"
+          width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+      </div>
+    </div>
+    <!-- End Modal -->
     </main>
-
+    <footer class="footer pt-5 pb-4 pb-lg-5">
+      <div class="container text-center pt-lg-3">
+        <div class="navbar-brand justify-content-center text-dark mb-2 mb-lg-4">
+          <img src="assets/img/oscarleon.svg" class="me-2" width="200" alt="OSCARLEON">
+          <!-- <span class="fs-4">Silicon</span> -->
+        </div>
+        <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
+          <li class="nav-item"><a href="#" class="nav-link">Equipo</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Certificaciones</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Terminos y condiciones</a></li>
+        </ul>
+        <div class="d-flex flex-column flex-sm-row justify-content-center">
+          <a href="#" class="btn btn-primary shadow-primary btn-lg me-sm-4 mb-3" id="openModalCoti">Solicitar presupuesto</a>
+          <a href="#" class="btn btn-outline-dark btn-lg mb-3" id="openModalLink">
+            <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
+            Solicitar reunión virtual
+          </a>
+        </div>
+        <div class="d-flex justify-content-center pt-4 mt-lg-3">
+          <a href="https://www.linkedin.com/in/oscarleonapp/" class="btn btn-icon btn-secondary btn-linkedin mx-2" aria-label="LindIn Oscar León"  target="_blank">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/oscarleondev" class="btn btn-icon btn-secondary btn-facebook mx-2" aria-label="Facebook Oscar León"  target="_blank">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/oscarleon.app/" class="btn btn-icon btn-secondary btn-instagram mx-2" aria-label="Instagram Oscar León"  target="_blank">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=50241833532&text=%F0%9F%A4%9D%20Hola%2C%20OSCARLEON." class="btn btn-icon btn-secondary btn-whatsapp mx-2" aria-label="WhatsApp Oscar León"  target="_blank">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+        <p class="nav d-block fs-sm text-center pt-5 mt-lg-4 mb-0">
+          <span class="opacity-80">© Todos los derechos reservados. Desarrollado por </span>
+          <a class="nav-link d-inline-block p-0" href="https://oscarleon.app/" rel="noopener">OSCARLEON</a>
+        </p>
+      </div>
+    </footer>
 
     <!-- Back to top button -->
     <a href="#top" class="btn-scroll-top" data-scroll>
@@ -428,5 +488,9 @@
 
     <!-- Main Theme Script -->
     <script src="assets/js/theme.min.js"></script>
+
+    <!-- Modal Script Reunión virtual -->
+    <script src="assets/js/modal-reunio.js"></script>
+    <script src="assets/js/modal-cotizacion.js"></script>
   </body>
 </html>
