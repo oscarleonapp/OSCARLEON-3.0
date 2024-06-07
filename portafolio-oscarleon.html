@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <title>OSCARLEON | Desarrollo de software / Marketing, SEO, ADS</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="OSCARLEON |Desarrollo de software / Marketing, SEO, ADS">
+    <meta name="keywords" content="web, programación, desarrollo web, sistemas de contabilidad, sistemas de inventario, e-commerce, tiendas virtuales, aplicaciones, paginas web, landing page, diseño gráfico, marketing, seo, landing, html5, css3, javascript, consultorias, logos, portafolios, invitaciones">
+    <meta name="author" content="OSCARLEON">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Modal reunión -->
+    <link rel="stylesheet" href="assets/css/modal-reunión.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-KGKPK3RV');</script>
+<!-- End Google Tag Manager -->
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGKPK3RV" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <img src="assets/img/oscarleon.svg" width="150" alt="OSCARLEON">
+            <!-- OSCARLEON -->
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Servicios en TI</a>
+                  <div class="dropdown-menu p-0">
+                    <div class="d-lg-flex">
+                      <div class="mega-dropdown-column d-flex justify-content-center align-items-center rounded-3 rounded-end-0 px-0" style="margin: -1px; background-color: #f3f6ff;">
+                        <img src="assets/img/landings.jpg" alt="Landings">
+                      </div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4" style="--si-mega-dropdown-column-width: 15rem;">
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="#" class="dropdown-item">Sistemas para Inventarios</a></li>
+                          <li><a href="#" class="dropdown-item">Sistema para Manejo de Planilla</a></li>
+                          <li><a href="#" class="dropdown-item">Tiendas en Línea (virtuales)</a></li>
+                          <li><a href="#" class="dropdown-item d-flex align-items-center">Sistema para Ventas (POS)</a></li>
+                          <li><a href="#" class="dropdown-item">Sistema para RRHH</a></li>
+                          <li><a href="#" class="dropdown-item">Desarrollo de Apps Android</a></li>
+                          <li><a href="#" class="dropdown-item">Desarrollo de Apps IOS</a></li>
+                          <li><a href="#" class="dropdown-item">Desarrollo Web a la medida</a></li>
+                          <li><a href="#" class="dropdown-item">Desarrollo Web en WordPress</a></li>
+                          <li><a href="#" class="dropdown-item">Apps con AppSheet</a></li>
+                          <li><a href="#" class="dropdown-item">Wep Scraping con IA</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="#" class="dropdown-item d-flex align-items-center">Plantillas WordPress</a></li>
+                          <li><a href="#" class="dropdown-item">Migración WordPress</a></li>
+                          <li><a href="#" class="dropdown-item">Migración PrestaShop</a></li>
+                          <li><a href="#" class="dropdown-item">Hosting</a></li>
+                          <li><a href="#" class="dropdown-item">Servidores</a></li>
+                          <li><a href="#" class="dropdown-item">Dominios</a></li>
+                          <li><a href="#" class="dropdown-item">Certificados SSL</a></li>
+                          <li><a href="#" class="dropdown-item">Configuración de DNS</a></li>
+                          <li><a href="#" class="dropdown-item">Themes Web</a></li>
+                          <li><a href="#" class="dropdown-item">Contrucción Web en Bloques</a></li>
+                          <li><a href="#" class="dropdown-item">Diseño web para correos</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Otros servicios</a>
+                  <div class="dropdown-menu">
+                    <div class="d-lg-flex pt-lg-3">
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Community Manager</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="#" class="dropdown-item py-1">Elite</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Visionario</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Emprendedor</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Marketing</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="#" class="dropdown-item py-1">Google Analytics</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Google Tag Manager</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Facebook Pixel</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Marketing de Contenido</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Creación de estrategias</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Producción Audiovisual</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Publicidad</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="#" class="dropdown-item py-1">Facebook Adds</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Instagram Adds</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Google Adds</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Tiktok Adds</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Diseño Gráfico</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="#" class="dropdown-item py-1">Logotipos</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Portafolios</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Tarjetas de Presentación</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Branding</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Manual de identidad</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Firma de correos</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Sellos</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Hojas membretadas</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Posicionamiento</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="#" class="dropdown-item py-1">Google Analytics 4</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Google Search Console</a></li>
+                          <li><a href="#" class="dropdown-item py-1">SEO Basic</a></li>
+                          <li><a href="#" class="dropdown-item py-1">SEO Standar</a></li>
+                          <li><a href="#" class="dropdown-item py-1">SEO Ultimate</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Invitación Web</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="#" class="dropdown-item py-1">Bodas</a></li>
+                          <li><a href="#" class="dropdown-item py-1">Cumpleaños</a></li>
+                          <li><a href="#" class="dropdown-item py-1">15 años</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Consultorías en</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="404-v1.html" class="dropdown-item py-1">Publicidad Digital</a></li>
+                          <li><a href="404-v2.html" class="dropdown-item py-1">Marketing</a></li>
+                          <li><a href="404-v2.html" class="dropdown-item py-1">SEO</a></li>
+                          <li><a href="404-v2.html" class="dropdown-item py-1">Seguridad Informática</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="portafolio-oscarleon.html" class="nav-link">Portafolio</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="https://api.whatsapp.com/send?phone=50241833532&text=%F0%9F%A4%9D%20Hola%2C%20OSCARLEON." class="btn btn-primary w-100" target="_blank" rel="noopener">
+                <i class="bi bi-whatsapp fs-4 lh-1 me-1"></i>
+                &nbsp;Contactar
+              </a>
+            </div>    
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Claro</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Oscuro</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="https://api.whatsapp.com/send?phone=50241833532&text=%F0%9F%A4%9D%20Hola%2C%20OSCARLEON." class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bi bi-whatsapp fs-5 lh-1 me-1"></i>
+            &nbsp;Contactar
+          </a>
+        </div>
+      </header>
+
+      <!-- Portafolio oscarleon.app -->
+      <section id="landings" class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5">
+        <h2 class="h1 pt-2 pt-lg-0">Portafolio</h2>
+        <p class="fs-lg pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Estos son algunos de los trabajos que he realizado y que están en proceso para mis clientes.</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+          <!-- Proximamente -->
+          <div class="col position-relative mb-4 mb-lg-5">
+            <div class="position-relative">
+              <img src="assets/img/landing/intro/landings/placeholder.jpg" class="b-block border rounded-3 shadow-sm" alt="Placeholder">
+              <div class="position-absolute" style="top: 38.4%; padding-left: 15.38%; padding-right: 15.38%;">
+                <img src="assets/img/landing/intro/landings/wireframe.svg" class="placeholder placeholder-wave bg-transparent opacity-80" alt="">
+              </div>
+            </div>
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <span class="nav-link justify-content-center fw-bold pe-none p-0">Mindful Guatemala</span>
+            </h3>
+          </div>
+          <!-- END Proximamente -->
+          <!-- Proximamente -->
+          <div class="col position-relative mb-4 mb-lg-5">
+            <div class="position-relative">
+              <img src="assets/img/landing/intro/landings/placeholder.jpg" class="b-block border rounded-3 shadow-sm" alt="Placeholder">
+              <div class="position-absolute" style="top: 38.4%; padding-left: 15.38%; padding-right: 15.38%;">
+                <img src="assets/img/landing/intro/landings/wireframe.svg" class="placeholder placeholder-wave bg-transparent opacity-80" alt="">
+              </div>
+            </div>
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <span class="nav-link justify-content-center fw-bold pe-none p-0">Camas Cielo</span>
+            </h3>
+          </div>
+          <!-- END Proximamente -->
+          <!-- Proximamente -->
+          <div class="col position-relative mb-4 mb-lg-5">
+            <div class="position-relative">
+              <img src="assets/img/landing/intro/landings/placeholder.jpg" class="b-block border rounded-3 shadow-sm" alt="Placeholder">
+              <div class="position-absolute" style="top: 38.4%; padding-left: 15.38%; padding-right: 15.38%;">
+                <img src="assets/img/landing/intro/landings/wireframe.svg" class="placeholder placeholder-wave bg-transparent opacity-80" alt="">
+              </div>
+            </div>
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <span class="nav-link justify-content-center fw-bold pe-none p-0">Ing. Mirna Ayala</span>
+            </h3>
+          </div>
+          <!-- END Proximamente -->
+          <!-- Inversiones Iginla -->
+          <div class="col card-hover shadow-none bg-none position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/mobile-app-showcase-v1.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.1">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-mobile-app-showcase-v1.html" class="stretched-link">Mobile App Showcase v.1</a>
+            </h3>
+          </div>
+          <!-- END Inversiones Iginla -->
+
+        </div>
+      </section>
+       <!-- END Portafolio oscarleon.app -->
+
+    </main>
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4 pb-lg-5 bg-secondary">
+      <div class="container text-center pt-lg-3">
+        <div class="navbar-brand justify-content-center text-dark mb-2 mb-lg-4">
+          <img src="assets/img/oscarleon.svg" class="me-2" width="200" alt="OSCARLEON">
+          <!-- <span class="fs-4">Silicon</span> -->
+        </div>
+        <ul class="nav justify-content-center pt-3 pb-4 pb-lg-5">
+          <li class="nav-item"><a href="#" class="nav-link">Equipo</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Certificaciones</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Terminos y condiciones</a></li>
+        </ul>
+        <div class="d-flex flex-column flex-sm-row justify-content-center">
+          <a href="#" class="btn btn-primary shadow-primary btn-lg me-sm-4 mb-3" id="openModalCoti">Solicitar presupuesto</a>
+          <a href="#" class="btn btn-outline-dark btn-lg mb-3" id="openModalLink">
+            <i class="bx bx-calendar-check fs-xl me-2 ms-n1"></i>
+            Solicitar reunión virtual
+          </a>
+        </div>
+        <div class="d-flex justify-content-center pt-4 mt-lg-3">
+          <a href="https://www.linkedin.com/in/oscarleonapp/" class="btn btn-icon btn-secondary btn-linkedin mx-2" aria-label="LindIn Oscar León"  target="_blank">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/oscarleondev" class="btn btn-icon btn-secondary btn-facebook mx-2" aria-label="Facebook Oscar León"  target="_blank">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/oscarleon.app/" class="btn btn-icon btn-secondary btn-instagram mx-2" aria-label="Instagram Oscar León"  target="_blank">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=50241833532&text=%F0%9F%A4%9D%20Hola%2C%20OSCARLEON." class="btn btn-icon btn-secondary btn-whatsapp mx-2" aria-label="WhatsApp Oscar León"  target="_blank">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+        <p class="nav d-block fs-sm text-center pt-5 mt-lg-4 mb-0">
+          <span class="opacity-80">© Todos los derechos reservados. Desarrollado por </span>
+          <a class="nav-link d-inline-block p-0" href="https://oscarleon.app/" rel="noopener">OSCARLEON</a>
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Subir</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <!-- Modal Script Reunión virtual -->
+    <script src="assets/js/modal-reunio.js"></script>
+    <script src="assets/js/modal-cotizacion.js"></script>
+  </body>
+</html>
