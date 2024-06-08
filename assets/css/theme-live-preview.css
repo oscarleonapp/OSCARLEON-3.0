@@ -8610,7 +8610,7 @@ label {
 
 /* NAVBAR PREVIEW */
 .navbar-preview {
-  border-bottom: 3px solid #7952B3;
+  border-bottom: 3px solid #12a270;
   border-top: 1px solid #E5E9EF;
   min-height: 60px;
   background: #ffffff;
@@ -8639,14 +8639,14 @@ label {
     height: 0;
     border-style: solid;
     border-width: 0px 5px 8px 5px;
-    border-color: transparent transparent #7952B3 transparent;
+    border-color: transparent transparent #12a270 transparent;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: -3px; }
   .nav-preview .nav-link.active {
-    color: #7952B3; }
+    color: #12a270; }
     .nav-preview .nav-link.active:before {
       content: ''; }
 
@@ -9003,7 +9003,7 @@ button, input, optgroup, select, textarea {
   .woocommerce-page #respond input.btn-brand#submit,
   .woocommerce #content input.btn-brand.button,
   .woocommerce-page #content input.btn-brand.button {
-    background: #7952B3;
+    background: #12a270;
     color: #ffffff; }
     .btn.btn-brand:hover, .woocommerce a.btn-brand.button:hover,
     .woocommerce-page a.btn-brand.button:hover,
@@ -9024,7 +9024,7 @@ button, input, optgroup, select, textarea {
     .woocommerce-page #respond input.btn-brand#submit:focus,
     .woocommerce #content input.btn-brand.button:focus,
     .woocommerce-page #content input.btn-brand.button:focus {
-      background: #614092;
+      background: #12a270;
       color: #ffffff; }
   .btn.btn-inverted, .woocommerce a.btn-inverted.button,
   .woocommerce-page a.btn-inverted.button,
