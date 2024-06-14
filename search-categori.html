@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Contenido</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .content-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            display: none; /* Ocultar inicialmente */
+        }
+        .no-results {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            border-radius: 5px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Buscador de Contenido</h1>
+        <div class="form-group">
+            <input type="text" class="form-control" id="search-input" placeholder="Buscar...">
+        </div>
+        <div class="form-group">
+            <select class="form-control" id="category-select">
+                <option value="">Todas las categorías</option>
+                <option value="frutas">Frutas</option>
+                <option value="verduras">Verduras</option>
+                <!-- Agrega más categorías según sea necesario -->
+            </select>
+        </div>
+        <div id="content-list">
+            <div class="content-item" data-category="frutas">Apple</div>
+            <div class="content-item" data-category="frutas">Banana</div>
+            <div class="content-item" data-category="frutas">Cherry</div>
+            <div class="content-item" data-category="frutas">Date</div>
+            <div class="content-item" data-category="frutas">Elderberry</div>
+            <div class="content-item" data-category="frutas">Fig</div>
+            <div class="content-item" data-category="frutas">Grape</div>
+            <div class="content-item" data-category="frutas">Honeydew</div>
+            <div class="content-item" data-category="frutas">Kiwi</div>
+            <div class="content-item" data-category="frutas">Lemon</div>
+            <div class="content-item" data-category="frutas">Mango</div>
+            <div class="content-item" data-category="frutas">Nectarine</div>
+            <div class="content-item" data-category="frutas">Orange</div>
+            <div class="content-item" data-category="frutas">Papaya</div>
+            <div class="content-item" data-category="frutas">Quince</div>
+            <div class="content-item" data-category="frutas">Raspberry</div>
+            <div class="content-item" data-category="frutas">Strawberry</div>
+            <div class="content-item" data-category="frutas">Tomato</div>
+            <div class="content-item" data-category="frutas">Ugli fruit</div>
+            <div class="content-item" data-category="frutas">Vanilla</div>
+            <div class="content-item" data-category="frutas">Watermelon</div>
+            <div class="content-item" data-category="frutas">Xigua</div>
+            <div class="content-item" data-category="frutas">Yellow passion fruit</div>
+            <div class="content-item" data-category="verduras">Zucchini</div>
+        </div>
+        <div id="no-results" class="no-results">No se encontraron resultados</div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        document.getElementById('search-input').addEventListener('keyup', filterContent);
+        document.getElementById('category-select').addEventListener('change', filterContent);
+
+        function filterContent() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const category = document.getElementById('category-select').value;
+            const items = document.querySelectorAll('.content-item');
+            let hasResults = false;
+            let resultsCount = 0;
+
+            items.forEach(function(item) {
+                const text = item.textContent.toLowerCase();
+                const itemCategory = item.getAttribute('data-category');
+                if ((text.includes(query) || query === '') && (itemCategory === category || category === '')) {
+                    if (resultsCount < 10) {
+                        item.style.display = 'block';
+                        resultsCount++;
+                        hasResults = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            const noResults = document.getElementById('no-results');
+            if (!hasResults && query !== '') {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Contenido</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .content-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            display: none; /* Ocultar inicialmente */
+        }
+        .no-results {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            border-radius: 5px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Buscador de Contenido</h1>
+        <div class="form-group">
+            <input type="text" class="form-control" id="search-input" placeholder="Buscar...">
+        </div>
+        <div id="content-list">
+            <div class="content-item">Apple</div>
+            <div class="content-item">Banana</div>
+            <div class="content-item">Cherry</div>
+            <div class="content-item">Date</div>
+            <div class="content-item">Elderberry</div>
+            <div class="content-item">Fig</div>
+            <div class="content-item">Grape</div>
+            <div class="content-item">Honeydew</div>
+            <div class="content-item">Kiwi</div>
+            <div class="content-item">Lemon</div>
+            <div class="content-item">Mango</div>
+            <div class="content-item">Nectarine</div>
+            <div class="content-item">Orange</div>
+            <div class="content-item">Papaya</div>
+            <div class="content-item">Quince</div>
+            <div class="content-item">Raspberry</div>
+            <div class="content-item">Strawberry</div>
+            <div class="content-item">Tomato</div>
+            <div class="content-item">Ugli fruit</div>
+            <div class="content-item">Vanilla</div>
+            <div class="content-item">Watermelon</div>
+            <div class="content-item">Xigua</div>
+            <div class="content-item">Yellow passion fruit</div>
+            <div class="content-item">Zucchini</div>
+        </div>
+        <div id="no-results" class="no-results">No se encontraron resultados</div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        document.getElementById('search-input').addEventListener('keyup', function() {
+            const query = this.value.toLowerCase();
+            const items = document.querySelectorAll('.content-item');
+            let hasResults = false;
+            let resultsCount = 0;
+
+            items.forEach(function(item) {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(query) && query !== '') {
+                    if (resultsCount < 10) {
+                        item.style.display = 'block';
+                        resultsCount++;
+                        hasResults = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            const noResults = document.getElementById('no-results');
+            if (!hasResults && query !== '') {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
