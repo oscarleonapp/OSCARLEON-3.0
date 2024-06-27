@@ -285,9 +285,21 @@
                     </div>
                   </div>
                 </li>
-                <li class="nav-item">
-                  <!-- <a href="team-oscarleon.html" class="nav-link">Equipo</a> -->
-                  <a href="portafolio-oscarleon.html" class="nav-link">Portafolio</a>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Portafolio</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="portafolio-oscarleon.html" class="dropdown-item">Clientes</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Certificaciones</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Diseños Web</a></li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Herramientas</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="account-details.html" class="dropdown-item">Edición de Imagen</a></li>
+                          <li><a href="account-security.html" class="dropdown-item">Crear QR</a></li>
+                        </ul>
+                      </li>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -322,12 +334,12 @@
       <div class="position-relative text-center zindex-5 overflow-hidden pt-4 py-md-5">
 
         <!-- Slider controls (Prev / next) -->
-        <button type="button" id="hero-prev" class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2" aria-label="Previous">
+        <!-- <button type="button" id="hero-prev" class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2" aria-label="Previous">
           <i class="bx bx-chevron-left fs-1"></i>
         </button>
         <button type="button" id="hero-next" class="btn btn-next btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex me-n3 me-lg-2" aria-label="Next">
           <i class="bx bx-chevron-right fs-1"></i>
-        </button>
+        </button> -->
 
         <!-- Slider -->
         <div class="container text-center py-xl-5">
@@ -355,39 +367,38 @@
                   <div class="swiper-slide">
                     <h2 class="display-2 from-start mb-lg-4">Las Mejores Soluciones Tecnológicas para su Negocio</h2>
                     <div class="from-end">
-                      <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Brindamos una amplia gama de servicios de TI de alta calidad y soluciones de mejores prácticas a nuestros clientes para mejorar sus negocios.</p>
+                      <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Desarrollo de Software | Creación de estrategias | Posicionamiento en Google y todo lo que su negocio necesita para alcanzar el éxito.</p>
                     </div>
                     <div class="scale-up delay-1">
-                      <a href="#openModalCoti" class="btn btn-primary shadow-primary btn-lg">Solicitar Presupuesto</a>
+                      <a href="#openModalCoti" class="btn btn-primary shadow-primary btn-lg">¡Quiero un presupuesto!</a>
                     </div>
 
                   </div>
 
                   <!-- Item -->
-                  <div class="swiper-slide">
+                  <!-- <div class="swiper-slide">
                     <h2 class="display-2 from-start mb-lg-4">Desarrollo de Software 100% Profesional</h2>
                     <div class="from-end">
                       <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Construimos aplicaciones wew y móviles complejas. Con nosotros obtendrá software de calidad y un servicio 100% Profesional en todo momento.</p>
                     </div>
                     <div class="scale-up delay-1">
-                      <!-- <a href="#" class="btn btn-outline-primary shadow-info btn-lg">Ver proyectos realizados</a> -->
                     </div>
-                  </div>
+                  </div> -->
 
                   <!-- Item -->
-                  <div class="swiper-slide">
+                  <!-- <div class="swiper-slide">
                     <h2 class="display-2 from-start mb-lg-4">Soporte técnico &amp; comercial</h2>
                     <div class="from-end">
                       <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Garantizamos soporte de por vida para todas las aplicaciones que hemos creado.</p>
                     </div>
                     <div class="scale-up delay-1">
-                      <!-- <a href="#testimoniales" class="btn btn-outline-primary shadow-primary btn-lg">Reseñas de clientes</a> -->
+                      
                     </div>
                   </div>
-                </div>
+                </div> -->
 
                 <!-- Pagination (bullets) -->
-                <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div>
+                <!-- <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div> -->
               </div>
             </div>
           </div>
@@ -1307,263 +1318,7 @@
     </section>
     <!-- END Proyectos recientes -->
 
-    <!-- Testimonial -->
-    <section class="bg-secondary py-5">
-      <div class="container py-2 py-md-4 py-lg-5">
-        <h2 class="h1 text-center pb-3 pb-lg-0 mb-4 mb-lg-5">Lo que mis clientes dicen ...</h2>
-        <div class="position-relative px-sm-5 mx-auto" style="max-width: 976px;">
 
-          <!-- Prev button -->
-          <button type="button" id="prev" class="btn btn-prev btn-icon btn-sm position-absolute top-50 translate-middle-y start-0 d-none d-sm-inline-flex mt-n4" aria-label="Previous slide" tabindex="0" aria-controls="swiper-wrapper-0a2cda3ee13d784c">
-            <i class="bx bx-chevron-left"></i>
-          </button>
-
-          <!-- Next button -->
-          <button type="button" id="next" class="btn btn-next btn-icon btn-sm position-absolute top-50 translate-middle-y end-0 d-none d-sm-inline-flex mt-n4" aria-label="Next slide" tabindex="0" aria-controls="swiper-wrapper-0a2cda3ee13d784c">
-            <i class="bx bx-chevron-right"></i>
-          </button>
-
-          <!-- Slider -->
-          <div class="swiper swiper-nav-onhover pt-1 mx-md-2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" data-swiper-options="{
-            &quot;spaceBetween&quot;: 12,
-            &quot;loop&quot;: true,
-            &quot;pagination&quot;: {
-              &quot;el&quot;: &quot;.swiper-pagination&quot;,
-              &quot;clickable&quot;: true
-            },
-            &quot;navigation&quot;: {
-              &quot;prevEl&quot;: &quot;#prev&quot;,
-              &quot;nextEl&quot;: &quot;#next&quot;
-            }
-          }">
-            <div class="swiper-wrapper pt-4 pb-3" id="swiper-wrapper-0a2cda3ee13d784c" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(-1752px, 0px, 0px);"><div class="swiper-slide h-auto px-2 swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      Description
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="#" width="60" class="rounded-circle" alt="Kevin Recinos">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">Name</h6>
-                      <span class="fs-sm text-muted">Postition</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-
-
-              <!-- Productos Coral -->
-              <div class="swiper-slide h-auto px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      Excelente servicio, al desarrollar mi sitio web con catálogo para mis productos de limpieza automotriz.
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="assets/img/testimonials/client5.png" width="60" class="rounded-circle" alt="Productos Coral">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">Productos Coral</h6>
-                      <span class="fs-sm text-muted">Limpieza Automotriz</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <!-- Aviahn Tours -->
-              <div class="swiper-slide h-auto px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      Es evidente el profesionalismo que Oscar León tiene. Sin duda, se vendrán más proyectos en
-                      conjunto.
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="assets/img/testimonials/client2.jpg" width="60" class="rounded-circle" alt="Aviahn Tours">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">Aviahn Tours</h6>
-                      <span class="fs-sm text-muted">Agencia de viajes</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <!-- TNS GT -->
-              <div class="swiper-slide h-auto px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      Contrate el servicio de Hosting con Dominio, y puedo decir que el soporte que he recibido,
-                      me ha gustado mucho. Siempre atento a las necesidades que nos han surgido.
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="assets/img/testimonials/client1.jpg" width="60" class="rounded-circle" alt="TNS GT">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">TNS GT</h6>
-                      <span class="fs-sm text-muted">Telecom</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <!-- Martha Villatoro -->
-              <div class="swiper-slide h-auto px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      Recomiendo a Oscar León por ser una persona muy profesional en su trabajo, responsable,
-                            ético y de buenas costumbres.
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="assets/img/testimonials/martha.jpeg" width="60" class="rounded-circle" alt="Martha Villatoro">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">Martha Villatoro</h6>
-                      <span class="fs-sm text-muted">Gerente Comercial</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <!-- Carlos o Charlys -->
-              <div class="swiper-slide h-auto px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      He contratado los servicios de Oscar para Mantenimiento de mis computadoras, Crear QRs, y
-                            para la página web del Menú
-                            para mi restaurante. Excelente servicio.
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="assets/img/testimonials/carlos_charys.jpg" width="60" class="rounded-circle" alt="Carlos o Charlys">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">Carlos o Charlys</h6>
-                      <span class="fs-sm text-muted">Dueño de Restaurante Bar</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <!-- Marybel Maldonado -->
-              <div class="swiper-slide h-auto px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      Oscar, es una persona comprometida, dedicada y lo mejor es que le gusta apoyar y compartir
-                      su conocimiento garantizando la ayuda que da a otros, le da un valor agregado inspirando la
-                      confianza de que sus conocimientos son amplios y certeros, apoyando en la transformación y
-                      desarrollo de lo que enseña, dando un valor humano a las personas ayudando
-                      desinteresadamente.
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="assets/img/testimonials/marybel.jpeg" width="60" class="rounded-circle" alt="Marybell Maldonado">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">Marybell Maldonado Durán</h6>
-                      <span class="fs-sm text-muted">Asistente Administrativo comercial RR.HH</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-
-
-
-              <!-- Astrid Medina -->
-              <div class="swiper-slide h-auto px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      Oscar esta capacitado, comprometido y enfocado en dar excelentes resultados a sus proyectos.
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="assets/img/testimonials/astrid-medina.jpg" width="60" class="rounded-circle" alt="Astrid Medina">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">Astrid Medina</h6>
-                      <span class="fs-sm text-muted">Shipping and Receiving - USA</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <!-- Ing. Mirna Ayala -->
-              <div class="swiper-slide h-auto px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      Oscar ha apoyado a Emprende USAC en la transformación a desarrollar una feria digital con
-                            excelentes resultados.
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="assets/img/testimonials/ing-mirna.jpeg" width="60" class="rounded-circle" alt="Mirna Ayala">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">Ing. Mirna Ayala</h6>
-                      <span class="fs-sm text-muted">Catedrática USAC</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div>
-
-            <div class="swiper-slide h-auto px-2 swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 864px; margin-right: 12px;">
-                <figure class="card h-100 position-relative border-0 shadow-sm py-3 p-0 p-xxl-4 my-0">
-                  <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-xxl-5">
-                    <i class="bx bxs-quote-left"></i>
-                  </span>
-                  <blockquote class="card-body mt-2 mb-2">
-                    <p class="fs-lg mb-0">
-                      Description
-                    </p>
-                  </blockquote>
-                  <figcaption class="card-footer d-flex align-items-center border-0 pt-0 mt-n2 mt-lg-0">
-                    <img src="assets/img/avatar/14.jpg" width="60" class="rounded-circle" alt="oscarleon">
-                    <div class="ps-3">
-                      <h6 class="fw-semibold lh-base mb-0">Name</h6>
-                      <span class="fs-sm text-muted">Postition</span>
-                    </div>
-                  </figcaption>
-                </figure>
-              </div></div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
-          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-        </div>
-      </div>
-    </section>
-    <!-- End Testimonial -->
 
     <!-- Conocimientos -->
     <section class="py-5">
