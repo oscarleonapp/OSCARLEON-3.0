@@ -20,19 +20,13 @@
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://oscarleon.app/terminos-condiciones.html</loc>
+	<loc>https://oscarleon.app/servicios-ti/sistema-inventarios.html</loc>
 	<lastmod>2024-11-16T00:05:18+01:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://oscarleon.app/sistema-inventarios.html</loc>
-	<lastmod>2024-11-16T00:05:18+01:00</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://oscarleon.app/portafolio-oscarleon.html</loc>
+	<loc>https://oscarleon.app/portafolio/portafolio-oscarleon.html</loc>
 	<lastmod>2024-11-16T00:05:18+01:00</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.8</priority>
