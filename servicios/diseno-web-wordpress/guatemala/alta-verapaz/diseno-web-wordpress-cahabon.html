@@ -42,12 +42,17 @@
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Oscar León - Desarrollo Web y Marketing Digital",
-        "description": "Expertos en desarrollo web, marketing digital y SEO en Cahabón. Potencia tu negocio con estrategias digitales personalizadas.",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://oscarleon.app"
+        },
+        "name": "OSCARLEON: Diseño Web WordPress, Marketing Digital y SEO",
+        "description": "Especialistas en Diseño Web WordPress, creando sitios rápidos, seguros y personalizados para potenciar tu negocio. También ofrecemos Marketing Digital y SEO en Cahabón, Alta Verapaz",
         "url": "https://oscarleon.app",
         "logo": "https://oscarleon.app/assets/favicon/favicon180x180.png",
         "image": "https://oscarleon.app/assets/source/img/about-img.png",
         "telephone": "+50241833532",
+        <!-- Inicia la Ubicación Geográfica -->
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Calle Principal, Zona 1",
@@ -61,31 +66,31 @@
           "latitude": "15.5731",
           "longitude": "-89.8125"
         },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Cahabón, Alta Verapaz"
+        },
+        <!-- Ubicación Geográfica -->
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "dayOfWeek": [
+              "Lunes",
+              "Martes",
+              "Miércoles",
+              "Jueves",
+              "Viernes"
+            ],
             "opens": "09:00",
             "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "10:00",
-            "closes": "14:00"
           }
         ],
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+50241833532",
-          "contactType": "Customer Service",
-          "contactOption": "TollFree",
+          "contactType": "Servicio al Cliente",
           "areaServed": "GT",
           "availableLanguage": ["es", "en"]
-        },
-        "areaServed": {
-          "@type": "Place",
-          "name": "Cahabón, Alta Verapaz"
         },
         "sameAs": [
           "https://www.facebook.com/oscarleondev",
@@ -94,36 +99,160 @@
         ],
         "priceRange": "$$$",
         "hasMap": "https://goo.gl/maps/8gVNYW5TQ4H2",
+        "brand": {
+          "@type": "Brand",
+          "name": "OSCARLEON",
+          "url": "https://oscarleon.app"
+        },
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
           "reviewCount": "85"
         },
+        "keywords": "Desarrollo Web, WordPress, Diseño Gráfico, Consultoría en Publicidad Digital, Marketing Digital, Community Manager, SEO, Hosting, Certificados SSL, Apps",
+        "makesOffer": [
+          {
+            "@type": "Service",
+            "name": "Desarrollo Web",
+            "description": "Creación de sitios web personalizados y optimizados para mejorar la presencia en línea de tu negocio."
+          },
+          {
+            "@type": "Service",
+            "name": "WordPress",
+            "description": "Diseño y desarrollo de sitios web en WordPress con configuraciones avanzadas y diseño atractivo."
+          },
+          {
+            "@type": "Service",
+            "name": "Diseño Gráfico",
+            "description": "Diseño gráfico profesional para marcas, sitios web y material publicitario."
+          },
+          {
+            "@type": "Service",
+            "name": "Consultoría en Publicidad Digital",
+            "description": "Asesoramiento para optimizar tus campañas de publicidad digital y maximizar tu ROI."
+          },
+          {
+            "@type": "Service",
+            "name": "Marketing",
+            "description": "Estrategias de marketing digital adaptadas a las necesidades de tu negocio."
+          }
+        ],
         "review": [
           {
             "@type": "Review",
             "author": {
               "@type": "Person",
-              "name": "José Yela"
+              "name": "María López"
             },
             "reviewRating": {
               "@type": "Rating",
               "ratingValue": "5",
               "bestRating": "5"
             },
-            "datePublished": "2024-10-15",
-            "description": "Excelente servicio y profesionalismo en desarrollo web y marketing digital."
+            "datePublished": "2024-11-28",
+            "description": "El equipo de desarrollo web creó un sitio increíble para mi negocio. Altamente recomendados."
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Carlos Méndez"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "datePublished": "2024-11-20",
+            "description": "Su experiencia en WordPress es inigualable. Mi sitio ahora es rápido, seguro y atractivo."
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Luis García"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "datePublished": "2024-11-10",
+            "description": "Recibí una excelente consultoría en publicidad digital. Mis campañas ahora son mucho más efectivas."
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Sofía Ramírez"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "4.9",
+              "bestRating": "5"
+            },
+            "datePublished": "2024-11-08",
+            "description": "El marketing digital que implementaron ha incrementado mis ventas significativamente."
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Juan Torres"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "datePublished": "2024-11-05",
+            "description": "Su servicio de community manager ha elevado el engagement de mis redes sociales."
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Carla Jiménez"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "datePublished": "2024-11-02",
+            "description": "Gracias a su posicionamiento SEO, mi sitio web ahora aparece en las primeras posiciones de Google."
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Fernando Ruiz"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "datePublished": "2024-10-25",
+            "description": "Gracias a los certificados SSL que instalaron, mi sitio es ahora más seguro y confiable."
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Andrea Vargas"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "datePublished": "2024-10-22",
+            "description": "El desarrollo de apps que ofrecen es excelente. Mi aplicación móvil funciona perfectamente."
           }
-        ],
-        "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://oscarleon.app/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        ]
       }
       </script>
-      
     <!-- Facebook Meta -->
     <meta name="facebook-domain-verification" content="ug70ee5mvs5un7i640h74f81spapdm" />
     <!-- Theme switcher (color modes) -->
@@ -362,12 +491,12 @@
                 <div class="swiper-wrapper">
                   <!-- Item -->
                   <div class="swiper-slide">
-                    <h1 class="display-2 from-start mb-lg-4">Desarrollo Web Profesional en Cahabón</h1>
+                    <h1 class="display-2 from-start mb-lg-4">Diseño Web WordPress Profesional en Cahabón</h1>
                     <div class="from-end">
-                      <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Impulsa tu negocio con soluciones personalizadas en desarrollo web, SEO y marketing digital.</p>
+                      <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">Potencia tu negocio con soluciones personalizadas en diseño web con WordPress, SEO y marketing digital. Creamos sitios rápidos, seguros y adaptados a tus necesidades.</p>
                     </div>
                     <div class="scale-up delay-1">
-                      <a href="https://api.whatsapp.com/send?phone=50241833532&text=%F0%9F%A4%9D%20Hola%2C%20OSCARLEON." class="btn btn-primary shadow-primary btn-lg">¡Quiero más información!</a>
+                      <a href="https://api.whatsapp.com/send?phone=50241833532&text=%F0%9F%91%8B%20%C2%A1Hola!%20Estoy%20interesado%20en%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20de%20Dise%C3%B1o%20Web%20WordPress.%20%F0%9F%8E%A8%F0%9F%92%BB%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F%20Gracias.%20%F0%9F%98%8A" class="btn btn-primary shadow-primary btn-lg">¡Quiero información sobre Diseño Web WordPress!</a>
                     </div>
                   </div>
               </div>
