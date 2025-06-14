@@ -300,10 +300,28 @@
                     </div>
                     <div class="scale-up delay-1">
                       <a href="https://oscarleon.app/portafolio/portafolio-oscarleon.html" 
-                         class="btn shadow-info btn-lg" 
-                         title="Contáctanos por WhatsApp para más información sobre Desarrollo Web, SEO y Marketing Digital" style="background-color: rgb(250, 248, 128); color: black;">
-                         Ver Portafolio de Clientes
+                        class="btn btn-lg pulse-anim" 
+                        title="Contáctanos por WhatsApp para más información sobre Desarrollo Web, SEO y Marketing Digital" style="background-color: #01c380; color: white;">
+                        Ver Portafolio de Clientes
                       </a>
+                      <style>
+                      .pulse-anim {
+                        position: relative;
+                        z-index: 1;
+                        animation: pulse 1.5s infinite;
+                      }
+                      @keyframes pulse {
+                        0% {
+                         box-shadow: 0 0 0 0 rgba(1,195,128, 0.7);
+                        }
+                        70% {
+                         box-shadow: 0 0 0 12px rgba(1,195,128, 0);
+                        }
+                        100% {
+                         box-shadow: 0 0 0 0 rgba(1,195,128, 0);
+                        }
+                      }
+                      </style>
                     </div>
                   </div>
                   
