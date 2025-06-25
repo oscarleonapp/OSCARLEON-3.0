@@ -1,0 +1,89 @@
+/* El estilo para ocultar el modal por defecto */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1056; /* Sit on top - Higher than Bootstrap's default modal z-index (1050) and navbar (1030) */
+    padding-top: 5vh; /* Location of the box - Use viewport height for responsive padding */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(var(--ar-dark-rgb), 0.7); /* Dark overlay with opacity, using theme variable */
+}
+
+/* El estilo del contenido del modal */
+.modal-content {
+    background-color: var(--ar-body-bg); /* Use theme background color */
+    color: var(--ar-body-color); /* Use theme text color */
+    margin: 5% auto; /* Keep original margin for now, can be adjusted */
+    padding: 25px; /* Slightly increased padding */
+    border: 1px solid var(--ar-border-color); /* Use theme border color */
+    width: 90%; /* Responsive width */
+    max-width: 700px; /* Max width for larger screens */
+    border-radius: var(--ar-border-radius-lg); /* Use theme border radius */
+    box-shadow: var(--ar-box-shadow-lg); /* Use theme box shadow */
+    position: relative; /* Needed for absolute positioning of the close button */
+}
+
+/* El estilo del botón de cerrar (common for both modals) */
+.close, .closeCoti {
+    color: var(--ar-secondary-text); /* Use theme secondary text color */
+    position: absolute; /* Position relative to modal-content */
+    top: 10px;
+    right: 20px;
+    font-size: 2rem; /* Larger close button */
+    font-weight: bold;
+    line-height: 1;
+}
+
+.close:hover,
+.close:focus,
+.closeCoti:hover,
+.closeCoti:focus {
+    color: var(--ar-primary); /* Use theme primary color on hover/focus */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive iframe for Google Form */
+.modal-content iframe {
+  width: 100%;
+  min-height: 70vh; /* Ensure form is mostly visible */
+  border: none; /* Remove iframe border */
+}
+
+/* Dark mode specific adjustments */
+[data-bs-theme="dark"] .modal-content {
+  background-color: var(--ar-dark-body-bg);
+  color: var(--ar-dark-body-color);
+  border-color: var(--ar-dark-border-color);
+}
+
+[data-bs-theme="dark"] .close,
+[data-bs-theme="dark"] .closeCoti {
+  color: var(--ar-dark-secondary-text);
+}
+
+[data-bs-theme="dark"] .close:hover,
+[data-bs-theme="dark"] .close:focus,
+[data-bs-theme="dark"] .closeCoti:hover,
+[data-bs-theme="dark"] .closeCoti:focus {
+  color: var(--ar-primary); /* Keep primary color for hover in dark mode or choose a light variant if needed */
+}
+
+/* Estilo opcional para el enlace que abre el modal - Can be removed if not used directly */
+/*
+.open-modal-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.open-modal-link:hover {
+    background-color: #0056b3;
+}
+*/
